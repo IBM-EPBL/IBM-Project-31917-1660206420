@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form UX</title>
+
+    <link rel="stylesheet" href="style0.css">
+
+</head>
+<body>
+
+    <div class="form-parent">
+        <div class="sign-up-img"></div>
+        <div class="sign-in-img"></div>
+
+        <div class="form-container">
+            <div class="form" id="sign-in-form">
+                <form action="validation.php" method="post">
+                <h1 class="title">sign in</h1>
+                <div class="fields">
+                    <input type="email" name="user" placeholder="usernameID">
+                    <input type="password" name="password" placeholder="password">
+                </div>
+                <div class="submit-container">
+                    <button type="submit" class="btn">sign in</button>
+                    <p class="link" onclick="switchForm('register')">new here ? sign up here</p>
+                </div>
+                </form>
+            </div>
+            <form action="registration.php" method="post">
+            <div class="form" id="sign-up-form">
+                <h1 class="title">sign up</h1>
+                <div class="fields">
+                    <input type="text" placeholder="name">
+                    <input type="text" placeholder="username">
+                    <input type="email" name="user" placeholder="email">
+                    <input type="password" name="password" placeholder="password">
+                </div>
+                <div class="submit-container">
+                  <button type="submit" class="btn">sign up</button>
+                    <p class="link" onclick="switchForm('login')">already have an account ? sign in here</p>
+                </div>
+            </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
